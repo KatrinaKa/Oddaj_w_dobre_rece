@@ -1,0 +1,28 @@
+.grid-frontPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-areas: "image navi" "image info" "image buttons" "footer footer";
+}
+
+.image { grid-area: image; }
+
+.navi { grid-area: navi; }
+
+.info { grid-area: info; }
+
+.buttons { grid-area: buttons; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  grid-template-areas: "footerSection-1 footerSection-2 footerSection-3" "footerSection-1 footerSection-2 footerSection-3";
+  grid-area: footer;
+}
+
+.footerSection-1 { grid-area: footerSection-1; }
+
+.footerSection-2 { grid-area: footerSection-2; }
+
+.footerSection-3 { grid-area: footerSection-3; }
