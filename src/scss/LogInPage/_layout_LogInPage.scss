@@ -1,0 +1,46 @@
+.logInPage {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-logInPage {
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  :nth-child(1), :nth-child(3) {
+    font-size: $fontSizeBig;
+  }
+}
+
+img.logo {
+  @include logoDecor();
+}
+
+.step-2 div.step-image  {
+  display: block;
+  transform: rotate(180deg);
+
+  content: "\21EF";
+font-size: 64px;
+  font-weight: 900;
+}
+
+div.step-1, div.step-2, div.step-3, div.step-4 {
+
+  div.step-text {
+
+    line-height: 0.8;
+    font-size: 10px;
+
+  }
+}

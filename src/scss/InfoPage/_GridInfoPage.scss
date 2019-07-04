@@ -1,28 +1,34 @@
-.grid-frontPage {
+.grid-infoPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "InfoPageHeader" "InfoPageContainer";
+}
+
+.InfoPageHeader {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "InfoPageHeader-title" "InfoPageHeader-buttons" "InfoPageHeader-text";
+  grid-area: InfoPageHeader;
+}
+
+.InfoPageHeader-title { grid-area: InfoPageHeader-title; }
+
+.InfoPageHeader-buttons { grid-area: InfoPageHeader-buttons; }
+
+.InfoPageHeader-text { grid-area: InfoPageHeader-text; }
+
+.InfoPageContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1.5fr 1fr;
-  grid-template-areas: "image navi" "image info" "image buttons" "footer footer";
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas: "container-1 container-2" "InfoPageContainer-footer InfoPageContainer-footer";
+  grid-area: InfoPageContainer;
 }
 
-.image { grid-area: image; }
+.container-1 { grid-area: container-1; }
 
-.navi { grid-area: navi; }
+.container-2 { grid-area: container-2; }
 
-.info { grid-area: info; }
-
-.buttons { grid-area: buttons; }
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.9fr 1.1fr;
-  grid-template-areas: "footerSection-1 footerSection-2 footerSection-3" "footerSection-1 footerSection-2 footerSection-3";
-  grid-area: footer;
-}
-
-.footerSection-1 { grid-area: footerSection-1; }
-
-.footerSection-2 { grid-area: footerSection-2; }
-
-.footerSection-3 { grid-area: footerSection-3; }
+.InfoPageContainer-footer { grid-area: InfoPageContainer-footer; }

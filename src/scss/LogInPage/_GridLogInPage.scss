@@ -1,0 +1,12 @@
+.grid-logInPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "LogInPageTitle" "LoginPageMain" "LoginPageButton";
+}
+
+.LogInPageTitle { grid-area: LogInPageTitle; }
+
+.LoginPageMain { grid-area: LoginPageMain; }
+
+.LoginPageButton { grid-area: LoginPageButton; }

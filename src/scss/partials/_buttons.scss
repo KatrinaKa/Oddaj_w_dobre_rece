@@ -1,0 +1,12 @@
+.btn {
+  text-decoration: none;
+  color: $fontColor;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  background: none;
+  &:hover {
+    border: 1px solid black;
+  }
+}
