@@ -1,6 +1,6 @@
 import React from 'react';
 import FrontPage from "./FrontPage";
-import LogInPage from "./LogInPage";
+import LogInPage from "./FourSteps";
 import AboutUs from "./AboutUs";
 import InfoPage from "./InfoPage";
 import ContactPage from "./ContactPage";

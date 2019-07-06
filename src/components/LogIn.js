@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import LogInForm from "./LogIn/LogInForm";
 
 
 class LogIn extends React.Component {
@@ -14,6 +15,7 @@ class LogIn extends React.Component {
         return (
             <div>
                 <NavLink to="/" className="btn btn-navi return-btn" >Powrót do strony głownej</NavLink>
+                <LogInForm/>
             </div>
         );
     }

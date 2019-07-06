@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 
 import LogIn from "./components/LogIn";
 import Register from "./components/Register";
-import LogInPage from "./components/LogInPage";
+import LogInPage from "./components/FourSteps";
 import AboutUs from "./components/AboutUs";
 import ContactPage from "./components/ContactPage";
 import InfoPage from "./components/InfoPage";
@@ -36,7 +36,7 @@ class App extends React.Component {
                 <Route exact path="/log" component={LogIn}/>
                 <Route exact path="/register" component={Register}/>
               </Switch>
-                <Route  path="/logInpage" component={LogInPage}/>
+                <Route  path="/fourSteps" component={LogInPage}/>
                 <Route  path="/aboutUs" component={AboutUs}/>
                 <Route  path="/contact" component={ContactPage}/>
                 <Route  path="/info" component={InfoPage}/>
