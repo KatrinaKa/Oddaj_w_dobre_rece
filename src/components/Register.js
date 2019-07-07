@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import RegisterForm from "./Register/RegisterForm";
 
 
 class Register extends React.Component {
@@ -13,9 +12,11 @@ class Register extends React.Component {
 
     render() {
         return (
-            <div>
-                <NavLink to="/" className="btn btn-navi return-btn" >Powrót do strony głownej</NavLink>
-                <RegisterForm/>
+            <div id="register" className="grid-register grid">
+                <NavLink to="/" className="btn btn-navi return-btn">Powrót do strony głownej</NavLink>
+                <div className="RegisterFormEmpty"> </div>
+                <div className="RegisterFormNavi"></div>
+                <div className="RegisterFormMain"> </div>
             </div>
         );
     }

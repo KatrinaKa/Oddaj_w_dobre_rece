@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import LogInForm from "./LogIn/LogInForm";
 
 
 class LogIn extends React.Component {
@@ -13,10 +12,14 @@ class LogIn extends React.Component {
 
     render() {
         return (
-            <div>
-                <NavLink to="/" className="btn btn-navi return-btn" >Powrót do strony głownej</NavLink>
-                <LogInForm/>
+            <div id="logIn" className="grid-logIn grid">
+                 <NavLink to="/" className="btn btn-navi return-btn">Powrót do strony głownej</NavLink>
+                <div className="LoginFormEmpty"> </div>
+                <div className="LoginFormNavi"></div>
+                <div className="LoginFormMain"> </div>
             </div>
+
+
         );
     }
 }
