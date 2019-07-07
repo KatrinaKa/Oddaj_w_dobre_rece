@@ -1,12 +1,13 @@
 .logInPage {
   box-sizing: border-box;
   padding: 10px;
-  border: 1px solid black;
+  //border: 1px solid black;
   max-width: 100vw;
   height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .grid-logInPage {
@@ -17,15 +18,21 @@
   align-content: center;
   text-align: center;
   position: relative;
-  :nth-child(1), :nth-child(3) {
+  .logInPageTitle {
+    font-size: $fontSizeHuge;
+  }
+  :nth-child(3) {
     font-size: $fontSizeBig;
   }
 }
+
+
 .grid-steps{
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   height: 100%;
+  background-color: #EFEFEF;
 }
 
 img.logo {
@@ -39,7 +46,8 @@ div.step-1, div.step-2, div.step-3, div.step-4 {
   div.step-text {
 
     line-height: 0.8;
-    font-size: 10px;
+    font-size: 12px;
+    //max-height: 200px;
 
   }
 }
@@ -48,15 +56,15 @@ div.step-1, div.step-2, div.step-3, div.step-4 {
 }
 
 .steps {
-  position: relative;
+  //position: relative;
 
   .step-image {
-    position: absolute;
-    top: 0;
-    left: 25%;
+
 
     :nth-child(1) {
-      height: -webkit-fill-available;
+      height: 50px;
+      width:50px;
+      padding: 5px;
     }
   }
   .step-line {
@@ -73,12 +81,18 @@ div.step-1, div.step-2, div.step-3, div.step-4 {
       width: auto;
       height: 0;
       border: 2px solid black;
-      margin-top: 20px;
+      margin: 10px;
+
 
 
     }
   }
   .step-text {
     margin-top: 5px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
+
 }
+

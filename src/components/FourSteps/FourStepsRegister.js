@@ -1,4 +1,5 @@
 import React from 'react';
+import FrontBottomButtons from "../FrontPage/FrontBottomButtons";
 
 
 class FourStepsRegister extends React.Component {
@@ -11,8 +12,8 @@ class FourStepsRegister extends React.Component {
 
     render() {
         return (
-            <div className="logInPage register-button">
-
+            <div className="logInPage register-button buttons">
+                <button className="btn btn-info btn-register">ZAŁÓŻ KONTO</button>
             </div>
         );
     }

@@ -1,7 +1,7 @@
 .grid-steps {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
           "step-1 step-2 step-3 step-4"
           "step-1 step-2 step-3 step-4"
@@ -13,8 +13,8 @@
 
 .step-1 {
   display: grid;
-  grid-template-columns: 0.8fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr ;
   grid-template-areas: "step-image" "step-line" "step-text";
   grid-area: step-1;
 }
@@ -27,8 +27,8 @@
 
 .step-2 {
   display: grid;
-  grid-template-columns: 0.8fr;
-  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr ;
   grid-template-areas: "step-image" "step-line" "step-text";
   grid-area: step-2;
 }
@@ -42,8 +42,8 @@
 
 .step-3 {
   display: grid;
-  grid-template-columns: 0.8fr;
-  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr ;
   grid-template-areas: "step-image" "step-line" "step-text";
   grid-area: step-3;
 }
@@ -57,8 +57,8 @@
 
 .step-4 {
   display: grid;
-  grid-template-columns: 0.8fr;
-  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr ;
   grid-template-areas: "step-image" "step-line" "step-text";
   grid-area: step-4;
 }
