@@ -1,5 +1,7 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import LoginFormEmpty from "./LogIn/LoginFormEmpty";
+import LoginFormNavi from "./LogIn/LoginFormNavi";
+import LoginFormMain from "./LogIn/LoginFormMain";
 
 
 class LogIn extends React.Component {
@@ -13,10 +15,9 @@ class LogIn extends React.Component {
     render() {
         return (
             <div id="logIn" className="grid-logIn grid">
-                 <NavLink to="/" className="btn btn-navi return-btn">Powrót do strony głownej</NavLink>
-                <div className="LoginFormEmpty"> </div>
-                <div className="LoginFormNavi"></div>
-                <div className="LoginFormMain"> </div>
+                <LoginFormEmpty/>
+                <LoginFormNavi/>
+                <LoginFormMain/>
             </div>
 
 
