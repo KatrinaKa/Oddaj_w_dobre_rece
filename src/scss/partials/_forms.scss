@@ -1,4 +1,4 @@
-div.LoginFormMain {
+div.LoginFormMain, div.RegisterFormMain  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,5 +20,9 @@ div.form {
     height: 50px;
     text-align: center ;
     margin-bottom: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
   }
 }

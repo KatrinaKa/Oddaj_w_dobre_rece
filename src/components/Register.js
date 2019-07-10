@@ -1,5 +1,7 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import RegisterFormEmpty from "./Register/RegisterFormEmpty";
+import RegisterFormNavi from "./Register/RegisterFormNavi";
+import RegisterFormMain from "./Register/RegisterFormMain";
 
 
 class Register extends React.Component {
@@ -13,10 +15,9 @@ class Register extends React.Component {
     render() {
         return (
             <div id="register" className="grid-register grid">
-                <NavLink to="/" className="btn btn-navi return-btn">Powrót do strony głownej</NavLink>
-                <div className="RegisterFormEmpty"> </div>
-                <div className="RegisterFormNavi"></div>
-                <div className="RegisterFormMain"> </div>
+                <RegisterFormEmpty/>
+                <RegisterFormNavi/>
+                <RegisterFormMain/>
             </div>
         );
     }
