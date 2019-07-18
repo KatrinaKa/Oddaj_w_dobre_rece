@@ -1,3 +1,22 @@
 .grid-aboutUs {
   position: relative;
+
+
 }
+
+
+
+    //background-image: url("../images/about.jpg");
+    //background-size: cover;
+
+
+  .AboutUsImage {
+    .image {
+
+      background-image: url("../images/about.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }

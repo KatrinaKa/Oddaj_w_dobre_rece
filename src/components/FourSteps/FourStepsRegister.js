@@ -1,5 +1,4 @@
 import React from 'react';
-import FrontBottomButtons from "../FrontPage/FrontBottomButtons";
 import {NavLink} from "react-router-dom";
 
 
@@ -14,8 +13,6 @@ class FourStepsRegister extends React.Component {
     render() {
         return (
             <div className="logInPage register-button buttons">
-                {/*<button className="btn btn-info btn-register">ZAŁÓŻ KONTO</button>*/}
-
                 <NavLink to="/register" className="btn btn-navi btn-register"> <p>ZAŁÓŻ KONTO</p></NavLink>
 
             </div>
